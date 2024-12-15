@@ -1,0 +1,157 @@
+/* Importing Google Fonts for better typography */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500;700&display=swap');
+
+/* General Container Settings */
+.container {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f7fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the container takes up at least the full screen height */
+}
+
+/* Header */
+.db-header {
+    background: linear-gradient(to right, #4CAF50, #2e7d32); /* Green gradient */
+    color: #fff;
+    padding: 30px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-bottom: 4px solid #2e7d32;
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+.db-headerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.db-title {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.db-nav {
+    margin-top: 15px;
+}
+
+.db-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 25px;
+    padding: 10px 15px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.db-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.db-link:hover {
+    color: #fff;
+    background-color: #388e3c;
+}
+
+.db-link:hover::after {
+    width: 100%;
+}
+
+/* Main Content Section */
+.db-section {
+    padding: 50px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+    flex-grow: 1; /* Allows sections to grow and take up available space */
+}
+
+.db-section:hover {
+    transform: scale(1.02);
+}
+
+.db-sectionTitle {
+    font-size: 30px;
+    font-weight: 600;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.db-sectionContent {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    padding: 10px 0;
+    text-align: justify;
+}
+
+/* Footer */
+.db-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+.db-footerText {
+    font-size: 14px;
+    opacity: 0.8;
+    text-transform: uppercase;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .db-headerContent {
+        padding: 10px;
+    }
+
+    .db-title {
+        font-size: 28px;
+    }
+
+    .db-link {
+        margin: 0 15px;
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .db-section {
+        padding: 40px 15px;
+    }
+
+    .db-sectionTitle {
+        font-size: 24px;
+    }
+
+    .db-footer {
+        padding: 15px;
+    }
+}

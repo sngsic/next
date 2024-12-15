@@ -1,0 +1,256 @@
+/* General Styles */
+.support-container {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Section */
+.support-header {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: padding 0.3s ease-in-out;
+}
+
+.support-header:hover {
+    padding: 80px 20px;
+}
+
+.support-title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.support-subtitle {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+/* Support Details Section */
+.support-details {
+    margin: 40px auto;
+    padding: 25px;
+    background-color: white;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 900px;
+    width: 90%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.support-details:hover {
+    transform: scale(1.02);
+}
+
+.details-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #28a745;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.support-options {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.support-option {
+    font-size: 18px;
+    margin: 15px 0;
+    transition: color 0.3s ease;
+}
+
+.support-option:hover {
+    color: #28a745;
+}
+
+/* Contact Form Section */
+.contact-section {
+    margin: 40px auto;
+    padding: 25px;
+    background-color: white;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 900px;
+    width: 90%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-section:hover {
+    transform: scale(1.02);
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #28a745;
+    text-align: center;
+}
+
+.section-description {
+    font-size: 18px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+.submit-btn {
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}
+
+/* Footer Styling */
+.support-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+    transition: padding 0.3s ease-in-out;
+}
+
+.support-footer:hover {
+    padding: 25px 0;
+}
+
+.footer-text {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .support-header {
+        padding: 60px 15px;
+    }
+
+    .support-title {
+        font-size: 36px;
+    }
+
+    .support-subtitle {
+        font-size: 18px;
+    }
+
+    .support-details {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .details-title {
+        font-size: 28px;
+    }
+
+    .contact-section {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .form-input {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .submit-btn {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .support-header {
+        padding: 50px 10px;
+    }
+
+    .support-title {
+        font-size: 32px;
+    }
+
+    .support-subtitle {
+        font-size: 16px;
+    }
+
+    .support-details {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .details-title {
+        font-size: 24px;
+    }
+
+    .contact-section {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .form-input {
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+}
